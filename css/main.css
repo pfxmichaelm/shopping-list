@@ -1,0 +1,83 @@
+@font-face{
+	font-family: ;
+	src:url('../fonts/*.ttf');
+}
+
+body {
+	background-color: #F5FFD9;
+	text-align: center;
+}
+
+#header {
+	background-color: #C8BD8C;
+	height: 15em;
+}
+
+#icon {
+	padding-top: 1em;
+}
+
+#header h1 {
+	font-size: 3em;
+	padding-bottom: 0.125em;
+}
+
+#header h3 {
+	font-size: 1.5em;
+	padding-bottom: 0.5em;
+}
+
+#banner h1 {
+	font-size: 2.5em;
+}
+
+#banner h3 {
+	font-size: 1.5em;
+}
+
+#banner {
+	background-color: #BDD982;
+	height: 10em;
+	padding-top: 3em;
+}
+
+#banner button {
+	margin-top: 2em;
+}
+
+#listings {
+	background-color: #FAF0D2;
+	height: auto;
+	padding-top: 1.5em;
+}
+
+#listings h2 {
+	font-size: 2em;
+	padding-bottom: 0.5em;
+}
+
+#add-items {
+
+}
+
+#list-area {
+	padding-top: 1em;
+	margin-top: 0.5em;
+}
+
+button {
+	color: white;
+	width: auto;
+	background-color: #FF9E00;
+	border-color: #f15a29; 
+	text-shadow: none;
+	border-style: none;
+	border-radius: 2px;
+	padding: 0.5em 0.5em;
+	font-size: 1.0em;
+}
+button:hover {
+	background-color: #d9400e;
+	border-color: #cf3d0e;
+	cursor: pointer;
+}
