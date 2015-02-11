@@ -1,42 +1,47 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-	<meta charset="UTF-8">
-	<title>Shopping List</title>
-	<link rel="stylesheet" href="css/reset.css">
-	<link rel="stylesheet" href="css/main.css">
-	<!--<link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">-->
-	<link href="css/font-awesome.min.css" rel="stylesheet">	
-	<script src="http://code.jquery.com/jquery.min.js"></script>
-	<script src="js/app.js"></script>	
-</head>
-<body>
-	<div id="header">
-		<div id="icon">
-			<img src="images/todo-list.png" alt="Logo image" width="175px">
-		</div>
-		<h1>Sweet Shopping List App</h1>
-		<h3>designed by pfxmichaelm</h3>
-		<hr>
-	</div>
-	<div id="banner">
-		<h1>Generate custom list</h1>
-		<h3>* click add items to begin</h3>
-		<button>Add Items</button>
-	</div>
-	<div id="listings">
-		<h2>Shopping List</h2>
-		<h4>type item in box and press enter</h4>
-		<input id="add-items" type="text" name="added-items" autocomplete="off" placeholder="+ Add items">
-		<div id="list-area">
-			<p>Cheese</p>
-			<p>bread</p>
-			<button>Remove</button>
-			<button>Reset</button>
-		</div>
-	</div>
-	<div id="footer">
 
-	</div>
+<head>
+    <meta charset="UTF-8">
+    <title>Shopping List</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/main.css">
+    <!--<link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">-->
+    <link href="css/font-awesome.min.css" rel="stylesheet">
+    <script src="http://code.jquery.com/jquery.min.js"></script>
+    <script src="js/app.js"></script>
+</head>
+
+<body>
+    <div id="header">
+        <div id="icon">
+            <img src="images/todo-list.png" alt="Logo image" width="175px">
+        </div>
+        <h1>Sweet Shopping List App</h1>
+        <h3>designed by pfxmichaelm</h3>
+        <hr>
+    </div>
+    <div id="banner">
+        <h1>Generate custom list</h1>
+        <h3>* click add items to begin</h3>
+        <button>Add Items</button>
+    </div>
+    <div id="listings">
+        <h2>Shopping List</h2>
+        <h4>type item in box and press enter</h4>
+        <input id="add-items" type="text" name="added-items" autocomplete="off" placeholder="+ Add items">
+        <div id="list-area">
+        	<ul>
+            	<li>Cheese</li>
+            	<li>bread</li>
+            </ul>
+            <button>Remove</button>
+            <button>Reset</button>
+        </div>
+    </div>
+    <div id="footer">
+
+    </div>
 </body>
+
 </html>
