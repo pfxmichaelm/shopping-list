@@ -1,11 +1,23 @@
-@font-face{
-	font-family: ;
-	src:url('../fonts/*.ttf');
-}
-
 body {
 	background-color: #F5FFD9;
 	text-align: center;
+	font-family: "Comic Sans MS", cursive, sans-serif;
+}
+
+/*hr {
+	background-color: black;
+	border: none;
+	border-radius: 3px;
+	height: 10px;
+	margin: 30px auto 10px auto;
+	width: 75px;
+
+}*/
+
+hr {
+    border: 1em;
+    border-top: 1.0px solid #6C6969;
+    margin: 0.5rem 0;
 }
 
 #header {
@@ -25,6 +37,7 @@ body {
 #header h3 {
 	font-size: 1.5em;
 	padding-bottom: 0.5em;
+	margin-top: 0.5em;
 }
 
 #banner h1 {
@@ -33,6 +46,8 @@ body {
 
 #banner h3 {
 	font-size: 1.5em;
+	margin-top: 0.5em;
+	font-style: italic;	
 }
 
 #banner {
@@ -53,6 +68,12 @@ body {
 
 #listings h2 {
 	font-size: 2em;
+	padding-bottom: 0.25em;
+}
+
+#listings h4 {
+	font-size: 1em;
+	font-style: italic;
 	padding-bottom: 0.5em;
 }
 
@@ -61,8 +82,13 @@ body {
 }
 
 #list-area {
-	padding-top: 1em;
 	margin-top: 0.5em;
+	padding-bottom: 1.5em;
+}
+
+#list-area p {
+	padding-bottom: 0.1em;
+	margin-bottom: 0.5em;
 }
 
 button {
