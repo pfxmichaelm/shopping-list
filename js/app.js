@@ -5,15 +5,10 @@ $(document).ready(function() {
 		if(k.which==13) {
 			console.log($(this).val());
 			item = $(this).val();
-<<<<<<< HEAD
-			$('ul').prepend('<li>' + item + '</li>');
-			$(this).val('');
-=======
 			cb = $('<input type="checkbox" value="1" />').prepend(item);
 			$('ul').prepend('<li>' + cb + item + '</li>');
 			$(this).val('');
 			/*$('<input type="checkbox" value="1" />').prependTo('li');*/
->>>>>>> master
 		};
 	})
 
