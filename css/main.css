@@ -4,20 +4,12 @@ body {
 	font-family: "Comic Sans MS", cursive, sans-serif;
 }
 
-/*hr {
-	background-color: black;
-	border: none;
-	border-radius: 3px;
-	height: 10px;
-	margin: 30px auto 10px auto;
-	width: 75px;
-
-}*/
-
 hr {
     border: 1em;
     border-top: 1.0px solid #6C6969;
-    margin: 0.5rem 0;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50em;
 }
 
 #header {
@@ -40,24 +32,20 @@ hr {
 	margin-top: 0.5em;
 }
 
-#banner h1 {
-	font-size: 2.5em;
-}
-
 #banner h3 {
 	font-size: 1.5em;
-	margin-top: 0.5em;
+	margin-top: -0.5em;
 	font-style: italic;	
 }
 
 #banner {
 	background-color: #BDD982;
-	height: 10em;
+	height: 3em;
 	padding-top: 3em;
 }
 
-#banner button {
-	margin-top: 2em;
+#add-items {
+	margin-top: 0.5em;
 }
 
 #listings {
@@ -68,17 +56,8 @@ hr {
 
 #listings h2 {
 	font-size: 2em;
-	padding-bottom: 0.25em;
-}
-
-#listings h4 {
-	font-size: 1em;
-	font-style: italic;
-	padding-bottom: 0.5em;
-}
-
-#add-items {
-
+	padding-bottom: 0.05em;
+	padding-top: 0.5em;
 }
 
 #list-area {
@@ -89,6 +68,15 @@ hr {
 #list-area li {
 	padding-bottom: 0.1em;
 	margin-bottom: 0.5em;
+	text-align: left;
+}
+
+#list {
+	margin-left: 55em;
+}
+
+.strikethrough{
+	text-decoration: line-through;
 }
 
 button {

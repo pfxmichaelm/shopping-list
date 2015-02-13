@@ -8,14 +8,12 @@ $(document).ready(function() {
 			cb = '<input type="checkbox" value="1" />';
 			$('ul').prepend('<li>' + cb + item + '</li>');
 			$(this).val('');
-			/*$('<input type="checkbox" value="1" />').prependTo('li');*/
 		};
 	})
 
     $('ul').on('click', 'li', function() {
     	console.log('click li');
-    	var $ctrl = $('li').attr({ type: 'checkbox', name: 'chk'}).addClass("chk");
-    	$('list-area').append($ctrl);
+    	$(this).addClass("strikethrough");
     })
 
 });
