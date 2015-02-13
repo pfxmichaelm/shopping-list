@@ -14,11 +14,4 @@ $(document).ready(function() {
     	$(this).addClass("strikethrough");
     	console.log('stricken');
     })
-
-
-    /*$('ul').off('click', 'li', function() {
-    	$(this).css('color', 'blue');
-    	$(this).css('text-decoration', 'underline');
-    })*/
-
 });
