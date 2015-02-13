@@ -1,3 +1,4 @@
+
 body {
 	background-color: #F5FFD9;
 	text-align: center;
@@ -17,7 +18,9 @@ body {
 hr {
     border: 1em;
     border-top: 1.0px solid #6C6969;
-    margin: 0.5rem 0;
+    margin-right: auto;
+    margin-left: auto;
+    width: 50em;
 }
 
 #header {
@@ -40,19 +43,15 @@ hr {
 	margin-top: 0.5em;
 }
 
-#banner h1 {
-	font-size: 2.5em;
-}
-
 #banner h3 {
 	font-size: 1.5em;
-	margin-top: 0.5em;
+	margin-top: -0.85em;
 	font-style: italic;	
 }
 
 #banner {
 	background-color: #BDD982;
-	height: 10em;
+	height: 1.5em;
 	padding-top: 3em;
 }
 
@@ -68,27 +67,29 @@ hr {
 
 #listings h2 {
 	font-size: 2em;
-	padding-bottom: 0.25em;
-}
-
-#listings h4 {
-	font-size: 1em;
-	font-style: italic;
-	padding-bottom: 0.5em;
+	padding-top: 0.75em;
 }
 
 #add-items {
-
+	margin-top: 0.45em;
 }
 
-#list-area {
-	margin-top: 0.5em;
-	padding-bottom: 1.5em;
+#list {
+	display: inline-block;
+	margin-left: 43em;
+	padding: 0em;
+	width: 50em;
 }
 
-#list-area li {
+#list li {
 	padding-bottom: 0.1em;
 	margin-bottom: 0.5em;
+	text-align: left;
+}
+
+.strikethrough {
+	/*background-color: #36d9bc;*/
+	text-decoration: line-through;
 }
 
 button {

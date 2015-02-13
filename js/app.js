@@ -1,21 +1,24 @@
 $(document).ready(function() {
-	$('#add-items').keyup(function() {
-		console.log($(this).val());
-	}).keyup(function(k) {
+	$('#add-items').keyup(function(k) {
 		if(k.which==13) {
 			console.log($(this).val());
 			item = $(this).val();
-			cb = '<input type="checkbox" value="1" />';
-			$('ul').prepend('<li>' + cb + item + '</li>');
+			cb = '<input type="checkbox" name="finished" value="off" />';
+			rb = '<input type="radio" name="remove" value="off" />';
+			$('ul').prepend('<li>' + cb + ' ' + item + ' ' + rb +'</li>');
 			$(this).val('');
-			/*$('<input type="checkbox" value="1" />').prependTo('li');*/
+
 		};
 	})
-
-    $('ul').on('click', 'li', function() {
-    	console.log('click li');
-    	var $ctrl = $('li').attr({ type: 'checkbox', name: 'chk'}).addClass("chk");
-    	$('list-area').append($ctrl);
+	$('ul').on('click', 'li', function() {
+    	$(this).addClass("strikethrough");
+    	console.log('stricken');
     })
+
+
+    /*$('ul').off('click', 'li', function() {
+    	$(this).css('color', 'blue');
+    	$(this).css('text-decoration', 'underline');
+    })*/
 
 });
