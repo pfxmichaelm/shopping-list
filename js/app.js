@@ -6,7 +6,8 @@ $(document).ready(function() {
 			console.log($(this).val());
 			item = $(this).val();
 			cb = '<input type="checkbox" value="1" />';
-			$('ul').prepend('<li>' + cb + item + '</li>');
+			rb = '<input type="radio" value="1" />';
+			$('ul').prepend('<li>' + cb + item + rb +'</li>');
 			$(this).val('');
 			/*$('<input type="checkbox" value="1" />').prependTo('li');*/
 		};
