@@ -15,6 +15,20 @@ $(document).ready(function() {
 		$(this).toggleClass('strikethrough');
 	})
 
+	$('.reset').click(function() {
+		if($('li').hasClass('strikethrough')) {
+			console.log('reset list');
+			$('li').hide();
+		}
+	})
+
+	$('.remove').click(function() {
+		if($('li').hasClass('strikethrough')) {
+			console.log('remove items');
+			$('li').remove();
+		}
+	})
+
 /*    $('ul').on('click', 'li', function() {
     	if($(this).hasClass('non-strikethrough')) {
     	    $(this).addClass('strikethrough');
@@ -26,4 +40,3 @@ $(document).ready(function() {
     })*/
 
 });
-/* */
