@@ -1,6 +1,5 @@
 $(document).ready(function() {
 	$('#add-items').keyup(function() {
-		console.log($(this).val());
 	}).keyup(function(k) {
 		if(k.which==13) {
 			console.log($(this).val());
@@ -12,10 +11,19 @@ $(document).ready(function() {
 		};
 	})
 
-    $('ul').on('click', 'li', function() {
-    	console.log('click li');
-    	$(this).addClass("strikethrough");
-    })
+	$('ul').on('click', 'li', function() {
+		$(this).toggleClass('strikethrough');
+	})
+
+/*    $('ul').on('click', 'li', function() {
+    	if($(this).hasClass('non-strikethrough')) {
+    	    $(this).addClass('strikethrough');
+    	    console.log('add stricken');
+    	} else {
+    		$(this).addClass('non-strikethrough');
+    		console.log('add non-stricken');
+    	}   
+    })*/
 
 });
 /* */

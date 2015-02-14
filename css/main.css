@@ -86,6 +86,11 @@ hr {
 
 #list {
 	text-align: left;
+	text-decoration: none;
+}
+
+.non-strikethrough {
+	text-decoration: none;
 }
 
 .strikethrough{
