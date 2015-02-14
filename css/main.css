@@ -33,7 +33,7 @@ hr {
 }
 
 #banner h3 {
-	font-size: 1.5em;
+	font-size: 1.25em;
 	margin-top: -0.5em;
 	font-style: italic;	
 }
@@ -65,14 +65,15 @@ hr {
 	padding-bottom: 1.5em;
 }
 
-#list-area li {
+#list-area {
 	padding-bottom: 0.1em;
 	margin-bottom: 0.5em;
-	text-align: left;
+	display: inline-block;
+	margin-left: 0em;
 }
 
 #list {
-	margin-left: 55em;
+	text-align: left;
 }
 
 .strikethrough{
