@@ -34,8 +34,10 @@ hr {
 
 #banner h3 {
 	font-size: 1.25em;
-	margin-top: -0.5em;
-	font-style: italic;	
+	font-style: italic;
+	vertical-align: top;
+	display: inline-block;	
+	width: 20em;
 }
 
 #banner {
