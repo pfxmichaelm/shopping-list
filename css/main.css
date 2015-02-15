@@ -60,6 +60,7 @@ hr {
     padding: 0 0.5em;
     text-align: center;
     width: 10em;
+    outline: none;
 }
 
 #listings {

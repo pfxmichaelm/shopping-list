@@ -5,8 +5,7 @@ $(document).ready(function() {
 			console.log($(this).val());
 			item = $(this).val();
 			cb = '<input type="checkbox" value="off" />';
-			rb = '<input type="radio" value="off" />';
-			$('ul').prepend('<li>' + cb + ' ' + item + ' ' + rb +'</li>');
+			$('ul').prepend('<li>' + cb + ' ' + item + '</li>');
 			$(this).val('');
 		};
 	})
@@ -16,16 +15,14 @@ $(document).ready(function() {
 	})
 
 	$('.reset').click(function() {
-		if($('li').hasClass('strikethrough')) {
 			console.log('reset list');
-			$('li').hide();
-		}
+			$('li').remove();
 	})
 
 	$('.remove').click(function() {
 		if($('li').hasClass('strikethrough')) {
 			console.log('remove items');
-			$('li').remove();
+			$('li.strikethrough').remove();
 		}
 	})
 
