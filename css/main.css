@@ -121,14 +121,14 @@ button:hover {
 }
 
 /* media queries */
-@media only screen and (max-width: 500px) {
+@media only screen and (max-width: 300px) {
     #header {
         font-size: 2em;
         width: 10em;
     }
 }
 
-@media only screen and (max-width: 500px) {
+@media only screen and (max-width: 300px) {
     #banner {
         padding: 3em 0;
         width: 10em;
@@ -136,7 +136,7 @@ button:hover {
 
 }
 
-@media only screen and (max-width: 500px) {
+@media only screen and (max-width: 300px) {
   #footer {
     padding: 2em 0;
     /*font-size: 1em;*/
