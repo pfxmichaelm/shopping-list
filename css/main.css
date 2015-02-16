@@ -123,17 +123,17 @@ button:hover {
 /* media queries */
 @media only screen and (max-width: 500px) {
     #header {
-        font-size: 3em;
+        font-size: 2em;
+        width: 10em;
     }
 }
 
 @media only screen and (max-width: 500px) {
     #banner {
         padding: 3em 0;
+        width: 10em;
     }
-    .masthead-heading {
-        font-size: 3em;
-    }
+
 }
 
 @media only screen and (max-width: 500px) {
