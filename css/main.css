@@ -1,7 +1,8 @@
 body {
 	background-color: #F5FFD9;
 	text-align: center;
-	font-family: "Comic Sans MS", arial, sans-serif;
+	/*font-family: "Comic Sans MS", arial, sans-serif;*/
+	font-family: 'Open Sans', sans-serif;
 }
 
 hr {
