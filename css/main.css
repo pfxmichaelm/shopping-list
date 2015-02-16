@@ -121,18 +121,18 @@ button:hover {
 }
 
 /* media queries */
-@media only screen and (max-width: 300px) {
+@media only screen and (max-width: 500px) {
     #header {
-        font-size: 2em;
-        width: 10em;
-        background-color: lightblue;
+        font-size: 1em;
+        width: 8em;
+        background-color: orange;
     }
 }
 
-@media only screen and (max-width: 300px) {
+@media only screen and (max-width: 500px) {
     #banner {
-        padding: 3em 0;
-        width: 10em;
+        padding: 1em 0;
+        width: 8em;
     }
 
 }
