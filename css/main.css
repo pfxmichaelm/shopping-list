@@ -1,23 +1,16 @@
+
 body {
 	background-color: #F5FFD9;
 	text-align: center;
 	font-family: "Comic Sans MS", cursive, sans-serif;
 }
 
-/*hr {
-	background-color: black;
-	border: none;
-	border-radius: 3px;
-	height: 10px;
-	margin: 30px auto 10px auto;
-	width: 75px;
-
-}*/
-
 hr {
     border: 1em;
     border-top: 1.0px solid #6C6969;
-    margin: 0.5rem 0;
+    margin-left: auto;
+    margin-right: auto;
+    width: 25em;
 }
 
 #header {
@@ -40,24 +33,35 @@ hr {
 	margin-top: 0.5em;
 }
 
-#banner h1 {
-	font-size: 2.5em;
-}
-
 #banner h3 {
-	font-size: 1.5em;
-	margin-top: 0.5em;
-	font-style: italic;	
+	font-size: 1.25em;
+	font-style: italic;
+	vertical-align: top;
+	display: inline-block;	
+	width: 20em;
 }
 
 #banner {
 	background-color: #BDD982;
-	height: 10em;
-	padding-top: 3em;
+	height: 5em;
+	padding-top: 2em;
 }
 
-#banner button {
-	margin-top: 2em;
+#add-items {
+	margin-top: 0.5em;
+	background-color: PeachPuff;
+	height: 2em;
+	border: none;
+	border-color: PeachPuff;
+	border-radius: 15px;
+	color: black;
+    font-size: 0.75em;
+    line-height: 1.5em;
+    margin: 1em auto;
+    padding: 0 0.5em;
+    text-align: center;
+    width: 10em;
+    outline: none;
 }
 
 #listings {
@@ -68,17 +72,8 @@ hr {
 
 #listings h2 {
 	font-size: 2em;
-	padding-bottom: 0.25em;
-}
-
-#listings h4 {
-	font-size: 1em;
-	font-style: italic;
-	padding-bottom: 0.5em;
-}
-
-#add-items {
-
+	padding-bottom: 0.05em;
+	padding-top: 0.5em;
 }
 
 #list-area {
@@ -86,9 +81,24 @@ hr {
 	padding-bottom: 1.5em;
 }
 
-#list-area li {
+#list-area {
 	padding-bottom: 0.1em;
 	margin-bottom: 0.5em;
+	display: inline-block;
+	margin-left: 0em;
+}
+
+#list {
+	text-align: left;
+	text-decoration: none;
+}
+
+.non-strikethrough {
+	text-decoration: none;
+}
+
+.strikethrough{
+	text-decoration: line-through;
 }
 
 button {
@@ -98,12 +108,37 @@ button {
 	border-color: #f15a29; 
 	text-shadow: none;
 	border-style: none;
-	border-radius: 2px;
+	border-radius: 20px;
 	padding: 0.5em 0.5em;
-	font-size: 1.0em;
+	font-size: 0.8em;
+	outline: none;
 }
+
 button:hover {
 	background-color: #d9400e;
 	border-color: #cf3d0e;
 	cursor: pointer;
+}
+
+/* media queries */
+@media only screen and (max-width: 500px) {
+    #header {
+        font-size: 3em;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    #banner {
+        padding: 3em 0;
+    }
+    .masthead-heading {
+        font-size: 3em;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+  #footer {
+    padding: 2em 0;
+    /*font-size: 1em;*/
+  }
 }

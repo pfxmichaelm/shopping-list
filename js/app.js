@@ -1,22 +1,39 @@
 $(document).ready(function() {
 	$('#add-items').keyup(function() {
-		console.log($(this).val());
 	}).keyup(function(k) {
 		if(k.which==13) {
 			console.log($(this).val());
 			item = $(this).val();
-			cb = '<input type="checkbox" value="1" />';
-			rb = '<input type="radio" value="0" />';
-			$('ul').prepend('<li>' + cb + item + rb +'</li>');
+			cb = '<input type="checkbox" value="off" />';
+			$('ul').prepend('<li>' + cb + ' ' + item + '</li>');
 			$(this).val('');
-			/*$('<input type="checkbox" value="1" />').prependTo('li');*/
 		};
 	})
 
-    $('ul').on('click', 'li', function() {
-    	console.log('click li');
-    	var $ctrl = $('li').attr({ type: 'checkbox', name: 'chk'}).addClass("chk");
-    	$('list-area').append($ctrl);
-    })
+	$('ul').on('click', 'li', function() {
+		$(this).toggleClass('strikethrough');
+	})
+
+	$('.reset').click(function() {
+			console.log('reset list');
+			$('li').remove();
+	})
+
+	$('.remove').click(function() {
+		if($('li').hasClass('strikethrough')) {
+			console.log('remove items');
+			$('li.strikethrough').remove();
+		}
+	})
+
+/*    $('ul').on('click', 'li', function() {
+    	if($(this).hasClass('non-strikethrough')) {
+    	    $(this).addClass('strikethrough');
+    	    console.log('add stricken');
+    	} else {
+    		$(this).addClass('non-strikethrough');
+    		console.log('add non-stricken');
+    	}   
+    })*/
 
 });
